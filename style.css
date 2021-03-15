@@ -254,6 +254,10 @@ p {
     color: var(--feature-color, var(--c-primary-main));
     font-weight: 500;
     margin-bottom: var(--space-xs); }
+  .product__arrow {
+    font-size: var(--text-lg);
+    line-height: 1;
+    margin-right: var(--space-xs); }
   .product__icon {
     --main-header-feature-icon-size: 1.25rem;
     --main-header-feature-circle-size: 2.875rem;

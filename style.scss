@@ -222,6 +222,11 @@ p {
         font-weight: 500;
         margin-bottom: var(--space-xs);
     }
+    &__arrow {
+        font-size: var(--text-lg);
+        line-height: 1;
+        margin-right: var(--space-xs);
+    }
     &__icon {
         --main-header-feature-icon-size: 1.25rem;
         --main-header-feature-circle-size: 2.875rem;

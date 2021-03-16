@@ -24,6 +24,11 @@
   --c-primary-main: #3498DB;
   --c-primary-dark: #1F77B2;
   --c-primary-darker: #0F3A57;
+  --c-secondary-lighter: #CBFFE1;
+  --c-secondary-light: #79F1BB;
+  --c-secondary-main: #2ECC71;
+  --c-secondary-dark: #20B35F;
+  --c-secondary-darker: #13532E;
   --c-gray-darker: #4A4A4A;
   --c-gray-dark: #828282;
   --c-gray-main: #A5A2A2;
@@ -349,7 +354,8 @@ p {
     color: var(--c-danger-main); }
 
 .loading {
-  padding: var(--space-md) 0; }
+  padding: var(--space-md) 0;
+  text-align: center; }
   .loading__image {
     display: block;
     margin: 0 auto;
@@ -358,11 +364,9 @@ p {
   .loading__text {
     font-size: var(--text-lg);
     font-weight: bold;
-    color: var(--c-gray-darker);
-    display: -webkit-inline-box;
-    display: inline-flex; }
+    color: var(--c-gray-darker); }
     .loading__text::after {
-      margin-left: 0.05em;
+      margin-left: -0.1em;
       min-width: 3ch;
       display: inline-block;
       text-align: left;
@@ -385,6 +389,52 @@ p {
     content: ".."; }
   100% {
     content: "..."; } }
+
+.form-field {
+  height: var(--form-control-height);
+  border: 1px solid var(--c-gray-light);
+  border-radius: var(--radius-md);
+  padding: 0 var(--space-md);
+  color: var(--c-gray-dark);
+  display: block;
+  width: 100%; }
+  .form-field:focus {
+    outline: 0;
+    border-color: var(--c-primary-main); }
+  .form-field::-webkit-input-placeholder {
+    color: var(--c-gray-light); }
+  .form-field:-ms-input-placeholder {
+    color: var(--c-gray-light); }
+  .form-field::placeholder {
+    color: var(--c-gray-light); }
+
+.button-icon {
+  cursor: pointer;
+  border: 0;
+  height: var(--form-control-height);
+  width: var(--form-control-height);
+  border-radius: 50%;
+  display: -webkit-inline-box;
+  display: inline-flex;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  background-color: var(--c-secondary-main);
+  color: var(--c-white); }
+  .button-icon svg {
+    width: 70%;
+    height: 70%; }
+  .button-icon:focus, .button-icon:hover {
+    outline: 0;
+    background-color: var(--c-secondary-dark); }
+
+.search-form {
+  display: grid;
+  -webkit-box-align: center;
+  align-items: center;
+  grid-template-columns: 1fr auto;
+  gap: var(--space-sm); }
 
 .padding-bottom {
   padding-bottom: var(--space-md); }

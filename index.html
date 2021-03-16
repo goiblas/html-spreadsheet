@@ -7,7 +7,7 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:ital,wght@0,200;0,300;0,400;1,400;0,600;0,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css?v2">
+    <link rel="stylesheet" href="./style.css?v3">
 </head>
 <body>
     <div class="temporal">
@@ -114,7 +114,30 @@
                 </div>
                 </section>
                 <section id="keyword-report" class="section js-tabs__panel">
-                    keyword-planner
+                    <p>Start typing to find the best keywords. Discover new trends:</p>
+                    <form onsubmit="handleSubmit(event)" class="search-form">
+                        <input required class="js-keywords-field form-field" type="search" name="keywords" placeholder="Enter your keywords or URL...">
+                        <button type="submit" class="button-icon">
+                            <svg viewBox="0 0 16 16" height="24" width="24"><path d="M11.6703 12.8219C10.4416 13.8005 8.88543 14.3853 7.19265 14.3853C3.22026 14.3853 0 11.165 0 7.19265C0 3.22026 3.22026 0 7.19265 0C11.165 0 14.3853 3.22026 14.3853 7.19265C14.3853 8.88245 13.8026 10.4361 12.8271 11.6638L15.6952 14.6506C16.3465 15.6319 15.593 16.3876 14.5367 15.785L11.6703 12.8219ZM12.9468 7.19266C12.9468 10.3706 10.3706 12.9468 7.19265 12.9468C4.01474 12.9468 1.43853 10.3706 1.43853 7.19266C1.43853 4.01475 4.01474 1.43855 7.19265 1.43855C10.3706 1.43855 12.9468 4.01475 12.9468 7.19266Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        </button>
+                    </form>
+                    <div id="kwp-loading" class="is-hidden loading">
+                            <img class="loading__image" src="./assets/loading.gif" alt="" width="200" height="200">
+                            <div class="loading__text">
+                                Generando keywords, puede tardar varios minutos
+                            </div>
+                        </div>
+                    <script>
+                        function handleSubmit(ev) {
+                            ev.preventDefault();
+
+                            var input = document.querySelector(".js-keywords-field");
+                            console.log(input.value);
+
+                            var loading = document.getElementById("kwp-loading");
+                            loading.classList.remove("is-hidden")
+                        }
+                    </script>
                 </section>
             </div>
         </div>

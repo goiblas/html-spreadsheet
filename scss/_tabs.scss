@@ -1,0 +1,27 @@
+.tabs {
+    &__controls {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        background-color: var(--c-gray-lighter);
+    }
+    &__control {
+        text-decoration: none;
+        color: var(--c-gray-dark);
+        display: block;
+        padding: var(--space-md) var(--space-lg);
+
+        &:focus, &:hover {
+            outline: 0;
+            color: var(--c-primary-main);
+        }
+
+        &[aria-selected="true"] {
+            color: var(--c-primary-main);
+            background-color: var(--c-white);
+            box-shadow: inset 0 2px var(--c-primary-main);
+        }
+    }
+}

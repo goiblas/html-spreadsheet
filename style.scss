@@ -1,4 +1,6 @@
 @import "./scss/settings";
+@import "./scss/tabs";
+
 .temporal {
     width: 329px;
     margin: 0 0 0 auto;
@@ -15,16 +17,17 @@ body {
     box-sizing: border-box;
 }
 
-input, button {
+input, button, select {
     font-family: inherit;
     font-size: inherit;
+    background-color: var(--c-white);
 }
 p {
     margin: 0 0 var(--space-md);
 }
 
 .section {
-    padding:var(--space-lg) var(--space-md);
+    padding:var(--space-xl) var(--space-md);
 
     &--gray {
         background-color: var(--c-gray-lighter);
@@ -49,7 +52,7 @@ p {
         display: flex;
         justify-content: center;
         align-items: center;
-        color: #fff;
+        color: var(--c-white);
         font-size: var(--text-lg);
         font-weight: 700;
         font-family: var(--f-family-alternative);
@@ -95,15 +98,15 @@ p {
 
         input:checked  + & {
             background-color: var(--c-primary-main);
-            color: #fff;
+            color: var(--c-white);
         }
         
         .choice-button--platform & {
             font-weight: 500;
             box-shadow: var(--shadow-lg);
             padding: var(--space-md) 0;
-            border: 2px solid #fff;
-            background-color: #fff;
+            border: 2px solid var(--c-white);
+            background-color: var(--c-white);
             font-size: var(--text-2xs);
             color: var(--c-gray-dark);
             min-width: 80px;
@@ -120,7 +123,7 @@ p {
 .choice-button--platform input:checked  + .choice-button__label {
     border-color: var(--c-primary-main);
     color: var(--c-gray-dark);
-    background-color: #fff;
+    background-color: var(--c-white);
 }
 
 .button {
@@ -146,7 +149,7 @@ p {
     height: var(--form-control-height);
     background-color: var(--c-primary-main);
     border-radius: var(--radius-md);
-    color: #fff;
+    color: var(--c-white);
     font-weight: 500;
     align-items: center;
     border: 0;
@@ -181,7 +184,7 @@ p {
 
 .products-title {
     color: var(--c-gray-darker);
-    padding: var(--space-lg) 0;
+    padding: var(--space-md) 0 var(--space-lg);
 }
 
 .products-list {
@@ -214,7 +217,6 @@ p {
       --feature-color: var(--c-product-promo-code-main);
       --feature-bg: var(--c-product-promo-code-lighter);
     }
-    
 
     &__title {
         font-family: var(--f-family-alternative);
@@ -296,6 +298,41 @@ p {
         color: var(--c-danger-main);
     }
 }
+.loading {
+    padding: var(--space-md) 0;
+    &__image {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+        height: auto;
+    }
+    &__text {
+        font-size: var(--text-lg);
+        font-weight: bold;
+        color: var(--c-gray-darker);
+        display: inline-flex;
+
+        &::after {
+            margin-left: 0.05em;
+            min-width: 3ch;
+            display: inline-block;
+            text-align: left;
+            content: "";
+            animation: loading-dots 1s steps(4) infinite alternate-reverse;
+        }
+    }
+}
+@keyframes loading-dots {
+    33% {
+        content: "."
+    }
+    66% {
+        content: ".."
+    }
+    100% {
+        content: "..."
+    }
+}
 
 // utils
 .padding-bottom {
@@ -317,4 +354,7 @@ p {
     padding: 0;
     border: 0;
     white-space: nowrap;
+}
+.is-hidden {
+    display: none;
 }

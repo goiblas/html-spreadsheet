@@ -7,99 +7,118 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:ital,wght@0,200;0,300;0,400;1,400;0,600;0,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style.css?v2">
 </head>
 <body>
     <div class="temporal">
-        <section class="section">
-            <div class="step step--one">
-                <div class="step__header">
-                    <div class="step__number">1</div>
-                    <div class="step__title">Selecciona una plataforma de anunciante:</div>
-                </div>
-                <div class="step__body">
-                    <p>
-                        Selecciona la plataforma de la que quieres obtener tus métricas
-                    </p>
 
-                    <fieldset class="choice-buttons-group">
-                        <div class="choice-button choice-button--platform">
-                            <input class="sr-only" type="radio" id="googleAdsInput" name="channel">
-                            <label class="choice-button__label" for="googleAdsInput">
-                                <img src="./assets/logo-google-ads.svg" width="32" height="32" alt="">
-                                <span>Google Ads</span>
-                            </label>
-                        </div>
-                        
-                        <div class="choice-button choice-button--platform">
-                            <input class="sr-only" type="radio" id="fbAds" name="channel">
-                            <label class="choice-button__label" for="fbAds">
-                                <img src="./assets/logo-facebook.svg" width="32" height="32" alt="">
-                                <span>Facebook Ads</span>
-                            </label>
-                        </div>
-                        
-                        <div class="choice-button choice-button--platform">
-                            <input class="sr-only" type="radio" id="microsoftAds" name="channel">
-                            <label class="choice-button__label" for="microsoftAds">
-                                <img src="./assets/logo-microsoft.svg" width="32" height="32" alt="">
-                                <span>Microsoft Ads</span>
-                            </label>
-                        </div>
-                    </fieldset>
-                    <div class="p-y text-center">
-                        <button class="button">Login</button>
-                    </div>    
-                </div>
-            </div>
-            <div class="step step--two">
-                <div class="step__header">
-                    <div class="step__number">2</div>
-                    <div class="step__title">Selecciona una cuenta:</div>
-                </div>
-                <div class="step__body">
-                    <p>Si tienes más de una cuenta puedes seleccionarla de esta lista:</p>
-                    <select class="select">
-                        <option value="1" selected>Cuenta 1 de prueba (Id 2344877784)</option>
-                        <option value="2">Jesús Olazagoitia (Id 253432211)</option>
-                        <option value="4">Otra cuenta de prueba (Id 153432211)</option>
-                    </select>
-                </div>
-            </div>
-            <div class="step step--three">
-                <div class="step__header">
-                    <div class="step__number">3</div>
-                    <div class="step__title">Selecciona un periodo de tiempo para las métricas:</div>
-                </div>
-                <div class="step__body">
-                    <fieldset class="choice-buttons-group padding-top">
-                        <div class="choice-button">
-                            <input class="sr-only" type="radio" id="week" name="period">
-                            <label class="choice-button__label" for="week">
-                                7 days
-                            </label>
-                        </div>
-                        
-                        <div class="choice-button">
-                            <input class="sr-only" type="radio" id="month" name="period">
-                            <label class="choice-button__label" for="month">
-                                30 days
-                            </label>
-                        </div>
-                        
-                        <div class="choice-button">
-                            <input class="sr-only" type="radio" id="year" name="period">
-                            <label class="choice-button__label" for="year">
-                                365 days
-                            </label>
-                        </div>
-                    </fieldset>
-                    <div class="text-center">
-                        <button class="button-primary">Generar analíticas</button>
+        <div class="tabs js-tabs">
+            <ul class="tabs__controls js-tabs__controls" aria-label="Tools">
+                <li><a href="#analytics" class="tabs__control" aria-selected="true">Analytics</a></li>
+                <li><a href="#keyword-planner" class="tabs__control">Keyword Planner</a></li>
+            </ul>
+            <div class="js-tabs__panels">
+                <section id="analytics" class="section js-tabs__panel">
+                <div class="step step--one">
+                    <div class="step__header">
+                        <div class="step__number">1</div>
+                        <div class="step__title">Selecciona una plataforma de anunciante:</div>
+                    </div>
+                    <div class="step__body">
+                        <p>
+                            Selecciona la plataforma de la que quieres obtener tus métricas
+                        </p>
+    
+                        <fieldset class="choice-buttons-group">
+                            <div class="choice-button choice-button--platform">
+                                <input class="sr-only" type="radio" id="googleAdsInput" name="channel">
+                                <label class="choice-button__label" for="googleAdsInput">
+                                    <img src="./assets/logo-google-ads.svg" width="32" height="32" alt="">
+                                    <span>Google Ads</span>
+                                </label>
+                            </div>
+                            
+                            <div class="choice-button choice-button--platform">
+                                <input class="sr-only" type="radio" id="fbAds" name="channel">
+                                <label class="choice-button__label" for="fbAds">
+                                    <img src="./assets/logo-facebook.svg" width="32" height="32" alt="">
+                                    <span>Facebook Ads</span>
+                                </label>
+                            </div>
+                            
+                            <div class="choice-button choice-button--platform">
+                                <input class="sr-only" type="radio" id="microsoftAds" name="channel">
+                                <label class="choice-button__label" for="microsoftAds">
+                                    <img src="./assets/logo-microsoft.svg" width="32" height="32" alt="">
+                                    <span>Microsoft Ads</span>
+                                </label>
+                            </div>
+                        </fieldset>
+                        <div class="p-y text-center">
+                            <button class="button">Login</button>
+                        </div>    
                     </div>
                 </div>
+                <div class="step step--two">
+                    <div class="step__header">
+                        <div class="step__number">2</div>
+                        <div class="step__title">Selecciona una cuenta:</div>
+                    </div>
+                    <div class="step__body">
+                        <p>Si tienes más de una cuenta puedes seleccionarla de esta lista:</p>
+                        <select class="select">
+                            <option value="1" selected>Cuenta 1 de prueba (Id 2344877784)</option>
+                            <option value="2">Jesús Olazagoitia (Id 253432211)</option>
+                            <option value="4">Otra cuenta de prueba (Id 153432211)</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="step step--three">
+                    <div class="step__header">
+                        <div class="step__number">3</div>
+                        <div class="step__title">Selecciona un periodo de tiempo para las métricas:</div>
+                    </div>
+                    <div class="step__body">
+                        <fieldset class="choice-buttons-group padding-top">
+                            <div class="choice-button">
+                                <input class="sr-only" type="radio" id="week" name="period">
+                                <label class="choice-button__label" for="week">
+                                    7 days
+                                </label>
+                            </div>
+                            
+                            <div class="choice-button">
+                                <input class="sr-only" type="radio" id="month" name="period">
+                                <label class="choice-button__label" for="month">
+                                    30 days
+                                </label>
+                            </div>
+                            
+                            <div class="choice-button">
+                                <input class="sr-only" type="radio" id="year" name="period">
+                                <label class="choice-button__label" for="year">
+                                    365 days
+                                </label>
+                            </div>
+                        </fieldset>
+                        <div class="text-center">
+                            <!-- <div class="loading">
+                                <img class="loading__image" src="./assets/loading.gif" alt="" width="200" height="200">
+                                <div class="loading__text">
+                                    Generando gráficas
+                                </div>
+                            </div> -->
+                            <button class="button-primary">Generar analíticas</button>
+                        </div>
+                    </div>
+                </div>
+                </section>
+                <section id="keyword-planner" class="section js-tabs__panel">
+                    keyword-planner
+                </section>
             </div>
-        </section>
+        </div>
+    
         <aside class="section section--gray">
             <p class="products-title">Más productos de Clever Ads para optimizar tus campañas:</p>
             <ul class="products-list">
@@ -157,5 +176,6 @@
             </div>
         </section>
     </div>
+    <script src="./js/tabs.js"></script>
 </body>
 </html>

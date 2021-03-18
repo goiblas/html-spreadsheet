@@ -108,10 +108,9 @@
     --button-icon-size: 1.5rem;
 
     .button-icon svg {
-      color: var(--c-primary-lighter);
-      width: auto;
-      height: auto;
-    }
+      width: 1.333rem;
+       height: 1.333rem;
+     }
   }
 
   &__actions-icon {

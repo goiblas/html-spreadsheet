@@ -317,24 +317,6 @@ main {
     }
 }
 
-.button-small {
-    font-size: var(--text-2xs);
-    text-transform: uppercase;
-    font-weight: 700;
-    padding: 0 var(--space-md);
-    border-radius: 9999rem;
-    background-color: var(--c-gray-lighter);
-    white-space: nowrap;
-    display: inline-flex;
-    align-items: center;
-    height: 1.25rem;
-    text-decoration: none;
-    color: var(--c-primary-main);
-
-    &--danger {
-        color: var(--c-danger-main);
-    }
-}
 .loading {
     padding: var(--space-md) 0;
     text-align: center;

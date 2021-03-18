@@ -45,6 +45,9 @@
     --c-danger-dark: #D32F2F; 
     --c-danger-darker: #B71C1C;
 
+    --c-warning-lighter: #FFECCC; 
+    --c-warning-main: #F5A623; 
+
     --c-success-main: #2ECC71;
 
     --c-white: #ffffff;
@@ -77,4 +80,8 @@
 
     // forms
     --form-control-height: 2.25rem;
+
+    // z-index
+    --zindex-popover: 5;
+    --zindex-overlay: 15;
 }

@@ -7,12 +7,75 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Nunito:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./style.css?v3">
+    <link rel="stylesheet" href="./style.css?v4">
 </head>
 <body>
-    <div class="temporal">
 
-        <div class="tabs js-tabs">
+    <div style=" width: 329px; margin: 0 0 0 auto;"> <!-- remove only for presentation -->
+        <div class="global">
+        <header class="padding-y">
+            <div class="account-wrapper">
+                <div class="account-wrapper__title">Link and manage your ad accounts:</div>
+
+                <button class="avatar" aria-controls="menu-account">
+                    <img src="https://source.unsplash.com/300x300/daily?face" alt="">
+                    <span class="avatar__status">1</span>
+                </button>
+                
+                <div id="menu-account" class="menu js-menu">
+                    <div class="menu__header">
+                        <div class="menu__icon">
+                            <svg aria-hidden="true" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M20.991 2.002a1 1 0 00-1 1v.637a9.036 9.036 0 01-7 3.363h-6a3.003 3.003 0 00-3 3v2a3.003 3.003 0 003 3h.484l-2.403 5.606a1 1 0 00.92 1.394h4c.4 0 .761-.238.918-.606l2.724-6.356a9.028 9.028 0 016.357 3.325v.637a1 1 0 102 0v-16a1 1 0 00-1-1zm-14 11a1 1 0 01-1-1v-2a1 1 0 011-1h1v4h-1zm2.341 7H7.508l2.142-5h1.825l-2.143 5zm10.66-4.478a11.052 11.052 0 00-7-2.522h-3v-4h3a11.053 11.053 0 007-2.522v9.044z" fill="currentColor" fill-rule="nonzero"/></svg>
+                        </div>
+                        Cuentas enlazadas
+                    </div>
+                    <ul class="menu__body">
+                        <li class="account">
+                            <span class="account__platform">
+                                <img src="./assets/logo-google-ads.svg" alt="Google Ads" width="32" height="32">
+                            </span>
+                            <span class="account__title">
+                                victor.rodriguez.developer@gmail.com
+                            </span>
+                            <span class="account__actions">
+                                <button class="account__actions-icon" aria-label="Change account">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M19.91 15.51h-4.53a1 1 0 000 2h2.4A8 8 0 014 12a1 1 0 10-2 0 10 10 0 0016.88 7.23V21a1 1 0 002 0v-4.5a1 1 0 00-.97-.99zM12 2a10 10 0 00-6.88 2.77V3a1 1 0 10-2 0v4.5a1 1 0 001 1h4.5a1 1 0 100-2h-2.4A8 8 0 0120 12a1 1 0 002 0A10 10 0 0012 2z" fill="currentColor" fill-rule="nonzero"/></svg>                                </button>
+                                <button class="account__actions-icon" aria-label="forgot">
+                                    <svg aria-hidden="true" viewBox="0 0 24 24" width="24" height="24" xmlns="http://www.w3.org/2000/svg"><path d="M4 12a1 1 0 001 1h7.59l-2.3 2.29a1 1 0 000 1.42 1 1 0 001.42 0l4-4a1 1 0 00.21-.33 1 1 0 000-.76 1 1 0 00-.21-.33l-4-4a1.004 1.004 0 10-1.42 1.42l2.3 2.29H5a1 1 0 00-1 1zM17 2H7a3 3 0 00-3 3v3a1 1 0 102 0V5a1 1 0 011-1h10a1 1 0 011 1v14a1 1 0 01-1 1H7a1 1 0 01-1-1v-3a1 1 0 00-2 0v3a3 3 0 003 3h10a3 3 0 003-3V5a3 3 0 00-3-3z" fill="currentColor" fill-rule="nonzero"/></svg>
+                                </button>
+                            </span>
+                        </li>
+                        <li class="account">
+                            <span class="account__platform">
+                                <img src="./assets/logo-facebook.svg" alt="Facebook Ads" width="32" height="32">
+                            </span>
+                            <span class="account__title">
+                                Facebook Ads (0)
+                            </span>
+                            <span class="account__actions">
+                                <button class="button-icon" aria-label="Add Facebook ads">
+                                    <svg aria-hidden="true" viewBox="0 0 12 12"  width="12" height="12"><path d="M11.25 5.25h-4.5V.75a.75.75 0 00-1.5 0v4.5H.75a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5z" fill="currentColor"/></svg>                                </button>
+                            </span>
+                        </li>
+                        <li class="account">
+                            <span class="account__platform">
+                                <img src="./assets/logo-microsoft.svg" alt="Microsoft Ads" width="32" height="32">
+                            </span>
+                            <span class="account__title">
+                                Microsoft Ads (0)
+                            </span>
+                            <span class="account__actions">
+                                <button class="button-icon" aria-label="Add Microsoft Ads">
+                                    <svg aria-hidden="true" viewBox="0 0 12 12"  width="12" height="12"><path d="M11.25 5.25h-4.5V.75a.75.75 0 00-1.5 0v4.5H.75a.75.75 0 000 1.5h4.5v4.5a.75.75 0 001.5 0v-4.5h4.5a.75.75 0 000-1.5z" fill="currentColor"/></svg>                                </button>
+                                </button>
+                            </span>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>
+        </header>
+        <main class="tabs js-tabs">
             <ul class="tabs__controls js-tabs__controls" aria-label="Tools">
                 <li><a href="#metrics" class="tabs__control" aria-selected="true">Metrics</a></li>
                 <li><a href="#keyword-report" class="tabs__control">Keyword Report</a></li>
@@ -31,32 +94,73 @@
     
                         <fieldset class="choice-buttons-group">
                             <div class="choice-button choice-button--platform">
-                                <input class="sr-only" type="radio" id="googleAdsInput" name="channel">
+                                <input class="sr-only" type="checkbox" id="googleAdsInput" name="channel">
                                 <label class="choice-button__label" for="googleAdsInput">
                                     <img src="./assets/logo-google-ads.svg" width="32" height="32" alt="">
                                     <span>Google Ads</span>
                                 </label>
                             </div>
                             
-                            <div class="choice-button choice-button--platform">
-                                <input class="sr-only" type="radio" id="fbAds" name="channel">
+                            <!-- <div 
+                                class="choice-button choice-button--platform tooltip-trigger js-tooltip-trigger " 
+                                data-tooltip-position="bottom"
+                                data-tooltip-title="Debes hacer <a href='#' onclick='signin(2)'>Login</a> con una cuenta de anunciante para generar un informe."
+                                data-tooltip-class="tooltip-first "
+                                title="Debes hacer Login con una cuenta de anunciante para generar un informe."
+                            >
+                                <input class="sr-only" type="checkbox" id="googleAdsInput" name="channel">
+                                <label class="choice-button__label" for="googleAdsInput">
+                                    <img src="./assets/logo-google-ads.svg" width="32" height="32" alt="">
+                                    <span>Google Ads</span>
+                                </label>
+                            </div> -->
+
+
+                            <div 
+                                class="choice-button choice-button--platform tooltip-trigger js-tooltip-trigger " 
+                                data-tooltip-position="bottom"
+                                data-tooltip-title="Debes hacer <a href='#' onclick='signin(2)'>Login</a> con una cuenta de anunciante para generar un informe."
+                                title="Debes hacer Login con una cuenta de anunciante para generar un informe."
+                            >
+                                <input disabled class="sr-only" type="checkbox" id="fbAds" name="channel">
                                 <label class="choice-button__label" for="fbAds">
                                     <img src="./assets/logo-facebook.svg" width="32" height="32" alt="">
                                     <span>Facebook Ads</span>
                                 </label>
                             </div>
                             
-                            <div class="choice-button choice-button--platform">
-                                <input class="sr-only" type="radio" id="microsoftAds" name="channel">
+                            <div 
+                                class="choice-button choice-button--platform tooltip-trigger js-tooltip-trigger " 
+                                data-tooltip-position="bottom"
+                                data-tooltip-title="Debes hacer <a href='#' onclick='signin(3)'>Login</a> con una cuenta de anunciante para generar un informe."
+                                data-tooltip-class="tooltip--last"
+                                title="Debes hacer Login con una cuenta de anunciante para generar un informe."
+                            >
+                                <input disabled class="sr-only" type="checkbox" id="microsoftAds" name="channel">
                                 <label class="choice-button__label" for="microsoftAds">
                                     <img src="./assets/logo-microsoft.svg" width="32" height="32" alt="">
                                     <span>Microsoft Ads</span>
                                 </label>
                             </div>
-                        </fieldset>
-                        <div class="p-y text-center">
-                            <button class="button">Login</button>
-                        </div>    
+                        </fieldset> 
+
+                        <script>
+                            function signin(id) {
+                                switch (id) {
+                                    case(1): 
+                                        alert("sign in with Google")
+                                        break;
+                                    case 2:
+                                        alert("sign in with Facebook")
+                                        break;
+                                    case 3:
+                                        alert("sign in with Microsoft")
+                                        break;
+                                    default:
+                                        break;
+                                }
+                            }
+                        </script>
                     </div>
                 </div>
                 <div class="step step--two">
@@ -79,7 +183,7 @@
                         <div class="step__title">Selecciona un periodo de tiempo para las métricas:</div>
                     </div>
                     <div class="step__body">
-                        <fieldset class="choice-buttons-group padding-top">
+                        <fieldset class="choice-buttons-group padding-y">
                             <div class="choice-button">
                                 <input class="sr-only" type="radio" id="week" name="period">
                                 <label class="choice-button__label" for="week">
@@ -101,7 +205,7 @@
                                 </label>
                             </div>
                         </fieldset>
-                        <div class="text-center">
+                        <div class="text-center padding-top">
                             <!-- <div class="loading">
                                 <img class="loading__image" src="./assets/loading.gif" alt="" width="200" height="200">
                                 <div class="loading__text">
@@ -117,8 +221,8 @@
                     <p>Start typing to find the best keywords. Discover new trends:</p>
                     <form onsubmit="handleSubmit(event)" class="search-form">
                         <input required class="js-keywords-field form-field" type="search" name="keywords" placeholder="Enter your keywords or URL...">
-                        <button type="submit" class="button-icon">
-                            <svg viewBox="0 0 16 16" height="24" width="24"><path d="M11.6703 12.8219C10.4416 13.8005 8.88543 14.3853 7.19265 14.3853C3.22026 14.3853 0 11.165 0 7.19265C0 3.22026 3.22026 0 7.19265 0C11.165 0 14.3853 3.22026 14.3853 7.19265C14.3853 8.88245 13.8026 10.4361 12.8271 11.6638L15.6952 14.6506C16.3465 15.6319 15.593 16.3876 14.5367 15.785L11.6703 12.8219ZM12.9468 7.19266C12.9468 10.3706 10.3706 12.9468 7.19265 12.9468C4.01474 12.9468 1.43853 10.3706 1.43853 7.19266C1.43853 4.01475 4.01474 1.43855 7.19265 1.43855C10.3706 1.43855 12.9468 4.01475 12.9468 7.19266Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
+                        <button type="submit" class="button-icon" aria-label="search">
+                            <svg aria-hidden="true" viewBox="0 0 16 16" height="24" width="24"><path d="M11.6703 12.8219C10.4416 13.8005 8.88543 14.3853 7.19265 14.3853C3.22026 14.3853 0 11.165 0 7.19265C0 3.22026 3.22026 0 7.19265 0C11.165 0 14.3853 3.22026 14.3853 7.19265C14.3853 8.88245 13.8026 10.4361 12.8271 11.6638L15.6952 14.6506C16.3465 15.6319 15.593 16.3876 14.5367 15.785L11.6703 12.8219ZM12.9468 7.19266C12.9468 10.3706 10.3706 12.9468 7.19265 12.9468C4.01474 12.9468 1.43853 10.3706 1.43853 7.19266C1.43853 4.01475 4.01474 1.43855 7.19265 1.43855C10.3706 1.43855 12.9468 4.01475 12.9468 7.19266Z" fill="currentColor" fill-rule="evenodd" clip-rule="evenodd"></path></svg>
                         </button>
                     </form>
                     <div id="kwp-loading" class="is-hidden loading">
@@ -140,7 +244,7 @@
                     </script>
                 </section>
             </div>
-        </div>
+        </main>
     
         <aside class="section section--gray">
             <p class="products-title">Más productos de Clever Ads para optimizar tus campañas:</p>
@@ -188,17 +292,15 @@
               </ul>
         </aside> 
         <section class="section">
-            <div class="account">
-                <div class="account__avatar">
-                    <img src="https://source.unsplash.com/300x300/weekly?face" alt="">
-                </div>
-                <div class="account__name">Nombre de la cuenta demasiado larga para aparecer completo</div>
-                <div class="account__action">
-                    <a href="#" class="button-small button-small--danger">Forgot</a>
-                </div>
+            <div class="text-center">
+                <a href="https://cleverads.com/" class="clever-link">www.cleverads.com</a>
             </div>
         </section>
-    </div>
+        </div>
+    </div> <!-- remove only for presentation -->
+    <script src="./js/util.js"></script>
     <script src="./js/tabs.js"></script>
+    <script src="./js/drop-menu.js"></script>
+    <script src="./js/tooltip.js"></script>
 </body>
 </html>

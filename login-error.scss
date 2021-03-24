@@ -49,7 +49,9 @@ h1 {
         height: 40px;
     }
 }
-
+.title {
+    font-weight: 700;
+}
 .subtitle {
     font-family: var(--f-family-main);
     font-size: var(--text-xl);

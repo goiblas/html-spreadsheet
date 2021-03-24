@@ -1,62 +1,126 @@
-body {
-    background-color: #F5F7F9;
-}
+:root {
+  --c-product-kwp-main: #3498DB;
+  --c-product-kwp-lighter: #DBEEFA;
+  --c-product-campaign-creator-main: #2FCC71;
+  --c-product-campaign-creator-lighter: #C9FFE0;
+  --c-product-audit-main: #FCA539;
+  --c-product-audit-lighter: #FEE8CC;
+  --c-product-banner-creator-main: #D439E9;
+  --c-product-banner-creator-lighter: #F9D6FF;
+  --c-product-slack-main: #660294;
+  --c-product-slack-lighter: #ECC8FF;
+  --c-product-translator-main: #E74C3C;
+  --c-product-translator-lighter: #F8CDC9;
+  --c-product-promo-code-main: #1ABC9C;
+  --c-product-promo-code-lighter: #B3F4E8;
+  --c-product-mobile-app-main: #F1C40F;
+  --c-product-mobile-app-lighter: #FBF1C1;
+  --c-product-teams-main: #4D54BB;
+  --c-product-teams-lighter: #D9DBF7;
+  --c-product-digital-pack-main: #E58E26;
+  --c-product-digital-pack-lighter: #F6D9B6;
+  --c-primary-lighter: #DCEDF9;
+  --c-primary-light: #A8D3F0;
+  --c-primary-main: #3498DB;
+  --c-primary-dark: #1F77B2;
+  --c-primary-darker: #0F3A57;
+  --c-secondary-lighter: #CBFFE1;
+  --c-secondary-light: #79F1BB;
+  --c-secondary-main: #2ECC71;
+  --c-secondary-dark: #20B35F;
+  --c-secondary-darker: #13532E;
+  --c-gray-darker: #4A4A4A;
+  --c-gray-dark: #828282;
+  --c-gray-main: #A5A2A2;
+  --c-gray-light: #D9D9D9;
+  --c-gray-lighter: #F6F6F6;
+  --c-danger-lighter: #FCDAD7;
+  --c-danger-light: #E57373;
+  --c-danger-main: #F44336;
+  --c-danger-dark: #D32F2F;
+  --c-danger-darker: #B71C1C;
+  --c-warning-lighter: #FFECCC;
+  --c-warning-main: #F5A623;
+  --c-success-main: #2ECC71;
+  --c-white: #ffffff;
+  --shadow-lg: 0 2px 21px rgba(0, 0, 0, 0.1);
+  --radius-md: 8px;
+  --radius-full: 9999em;
+  --f-family-main: 'Nunito', sans-serif;
+  --f-family-alternative: 'Montserrat', sans-serif;
+  --text-2xl: 1.5rem;
+  --text-xl: 1.3rem;
+  --text-lg: 1.2rem;
+  --text-md: 1rem;
+  --text-sm: 0.875rem;
+  --text-xs: 0.75rem;
+  --text-2xs: 0.625rem;
+  --line-height-body: 1.3;
+  --line-height-heading: 1;
+  --space-xs: .25rem;
+  --space-sm: .5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-2xl: 2.5rem;
+  --space-3xl: 3rem;
+  --form-control-height: 2.25rem;
+  --zindex-popover: 5;
+  --zindex-overlay: 15; }
+  @media (min-width: 30em) {
+    :root {
+      --text-2xl: 2.25rem;
+      --text-xl: 1.75rem; } }
 
-h2 {
-    font-family: Nunito;
-    font-weight: semibold;
-    font-size: 24px;
-    color: #4A4A4A;
-}
+body {
+  font-family: var(--f-family-main);
+  font-size: var(--text-md);
+  color: var(--c-gray-main);
+  line-height: var(--line-height-body);
+  margin: 0; }
+
+* {
+  box-sizing: border-box; }
+
+img, svg {
+  display: block;
+  max-width: 100%;
+  height: auto; }
+
+a {
+  color: var(--c-primary-main); }
 
 p {
-    font-family: Nunito;
-    font-weight: regular;
-    font-size: 16px;
-    color: #4A4A4A;
-}
+  margin: 0 0 var(--space-md); }
 
-img {
-    max-width: 100%;
-}
+h1 {
+  font-family: var(--f-family-alternative);
+  color: var(--c-gray-darker);
+  line-height: var(--line-height-heading);
+  font-size: var(--text-xl);
+  font-weight: 500;
+  padding: 0;
+  margin: var(--space-lg) 0; }
 
-#logo {
-    width: 50%;
-}
+.bg-gray-lighter {
+  background-color: var(--c-gray-lighter); }
 
-.container {
-    height: 200px;
-    text-align: center;
-    width: 70%;
-}
+.brand-header {
+  padding-top: calc(6vh + var(--space-lg));
+  padding-bottom: calc(5vh + var(--space-lg)); }
+  .brand-header__logo {
+    margin: 0 auto;
+    height: 40px; }
 
-.vertical-center {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
+.text-center {
+  text-align: center; }
 
-.myButton {
-    background-color: #44c767;
-    border-radius: 28px;
-    border: 1px solid #18ab29;
-    display: inline-block;
-    cursor: pointer;
-    color: #ffffff;
-    font-family: Arial;
-    font-size: 17px;
-    padding: 8px 22px;
-    margin: 5px;
-    text-decoration: none;
-    text-shadow: 0px 1px 0px #2f6627;
-}
+.space {
+  height: var(--space-xl); }
 
-.myButton:hover {
-    background-color: #5cbf2a;
-}
-
-.myButton:active {
-    position: relative;
-    top: 1px;
-}
+.content {
+  padding: 0 var(--space-md) var(--space-lg);
+  margin: 0 auto;
+  max-width: 24rem; }
+  .content img {
+    margin: 0 auto; }

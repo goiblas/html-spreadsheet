@@ -1,0 +1,68 @@
+@import "./scss/settings";
+
+body {
+    font-family: var(--f-family-main);
+    font-size: var(--text-md);
+    color: var(--c-gray-main);
+    line-height: var(--line-height-body);
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+img, svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: var(--c-primary-main);
+}
+
+p {
+    margin: 0 0 var(--space-md);
+}
+
+h1 {
+    font-family: var(--f-family-alternative);
+    color: var(--c-gray-darker);
+    line-height: var(--line-height-heading);
+    font-size: var(--text-xl);
+    font-weight: 500;
+    padding: 0;
+    margin: var(--space-lg) 0;
+}
+
+.bg-gray-lighter {
+    background-color: var(--c-gray-lighter);
+}
+
+.brand-header {
+    padding-top: calc(6vh + var(--space-lg));
+    padding-bottom: calc(5vh + var(--space-lg));
+
+    &__logo {
+        margin: 0 auto;
+        height: 40px;
+    }
+}
+
+.text-center {
+    text-align: center;
+}
+
+.space {
+    height: var(--space-xl);
+}
+.content {
+    padding: 0 var(--space-md) var(--space-lg);
+    margin: 0 auto;
+    max-width: 24rem;
+
+    img {
+        margin: 0 auto;
+    }
+}
